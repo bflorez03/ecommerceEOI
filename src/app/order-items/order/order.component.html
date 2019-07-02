@@ -1,0 +1,12 @@
+<h1>Finish your order!</h1>
+<div class="cart-element">
+  <app-cart [cart]="cart" (total)="updateTotal($event)"></app-cart>
+</div>
+<div class="shipping-element">
+  <app-shipping (shippingInfoEmitter)="saveShippingInfo($event)"></app-shipping>
+</div>
+<div>
+  <p>{{total}} Number of items</p>
+  <button type="button" (click)="cancelOrder()" >Cancel</button>
+  <button type="button" [disabled]="!endShipping" (click)="okOrder()">Finish</button>
+</div>

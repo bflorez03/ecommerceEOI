@@ -1,0 +1,31 @@
+<h1>Creación de un nuevo Item</h1>
+<form *ngIf="item">
+  <div>
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" [(ngModel)]="item.name" [ngModelOptions]="{standalone: true}" />
+  </div>
+  <div>
+    <label for="description">Descripción:</label>
+    <input type="text" id="description" [(ngModel)]="item.description" [ngModelOptions]="{standalone: true}"/>
+  </div>
+  <div>
+    <label for="price">Precio:</label>
+    <input type="number" id="price" [(ngModel)]="item.price" [ngModelOptions]="{standalone: true}"/>
+  </div>
+  <div>
+    <label for="stock">Stock:</label>
+    <input type="number" id="stock" [(ngModel)]="item.stock" [ngModelOptions]="{standalone: true}"/>
+  </div>
+  <div>
+      <label for="image">URL imagen:</label>
+      <input type="text" id="image" [(ngModel)]="item.image" [ngModelOptions]="{standalone: true}"/>
+    </div>
+  <div>
+    <label for="definition">Definición:</label>
+    <input type="text" id="definition" [(ngModel)]="item.definition" [ngModelOptions]="{standalone: true}"/>
+  </div>
+  <p>
+      <button type="button" value="Enviar" (click)="postItem()">Crear</button>
+      <input type="reset" value="Borrar">
+    </p>
+</form>

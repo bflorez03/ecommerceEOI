@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Raleway Italic'), local('Raleway-Italic'), url(https://fonts.gstatic.com/s/raleway/v11/IIm-lPOtfVKQy0GMiczF_1tXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+h2 {
+  font-family: 'Relaway';
+  color: #1A2636;
+  font-size: 4em;
+}
+
+p.pHeader {
+  font-size: 1.5em;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: #1A2636
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+ul>li{
+  text-align: left;
+  background-color: #1A2636;
+  margin: 1em;
+  padding: 2em;
+  width: 20em;
+  border-style: hidden;
+  border-width: 1em;
+  border-radius: 0.5em;
+}
+
+/* ul>li.true {
+  text-align: left;
+  background-color: rgb(163, 9, 9);
+  margin: 1em;
+  padding: 2em;
+  width: 20em;
+  border-style: hidden;
+  border-width: 1em;
+  border-radius: 0.5em;
+} */
+
+/* 
+li>img {
+  width: 20em;
+}
+
+li>h1 {
+  background-color: #1A2636;
+  color: #EDF4F9;
+  text-align: center
+}
+
+li>p {
+  color: #EDF4F9;
+  background-color: #1A2636;
+}
+
+p.quantity {
+  display: flex;
+  justify-content: center
+}
+
+p.quantity>input {
+  margin: 5px;
+  width: 4em;
+  border: none;
+  border-radius: 5px;
+  text-align: center
+}
+
+p.quantity>button {
+  background-color: cadetblue;
+  width: 2em;
+  height: 2em;
+  border: none;
+  margin: 3px;
+  border-radius: 10px;
+  color: #1A2636;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.tagBotton {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+   background-color: #1A2636
+}
+
+.tagBotton>p {
+  background-color: #1A2636;
+  color: #EDF4F9 
+}
+
+.tagBotton>button {
+  width: 3.5em;
+  color: #1A2636;
+  border-style: none;
+  border-radius: 20px;
+}
+ */

@@ -1,0 +1,16 @@
+<h2>Scientist blog!</h2>
+<p class="pHeader">There are {{ myItems | total:'stock' }} items in stock.</p>
+<p class="pHeader">There is {{ myItems | total:'price' }} price of total items.</p>
+<div>
+  <button type="button" (click)="addNewItem()">New Item</button>
+  <p>{{numItemCart}}</p>>
+  <button type="button" (click)="order()">
+    <img src="assets/cart.png">
+  </button>
+</div>
+<ul>
+  <li *ngFor="let item of myItems">
+    <app-item class='item[selected]' [item]='item' (delete)="deleteItem($event)" (addCart)='addToCart($event)'>
+    </app-item>
+  </li>
+</ul>

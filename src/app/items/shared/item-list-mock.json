@@ -1,0 +1,31 @@
+{
+  "item-list": [
+    {
+      "id": 1,
+      "name": "First item name",
+      "description": "ajsdhbasjd",
+      "price": 14,
+      "stock": 20,
+      "image": "assets/fastCar.jpg",
+      "definition": "No disponible"
+    },
+    {
+      "id": 2,
+      "name": "El mejor producto",
+      "description": "lasdoa",
+      "price": 3,
+      "stock": 20,
+      "image": "assets/globalWarm.jpg",
+      "definition": "No disponible"
+    },
+    {
+      "id": 3,
+      "name": "Third item name",
+      "description": "kajsbkkfwie",
+      "price": 2,
+      "stock": 0,
+      "image": "assets/mosquito.jpg",
+      "definition": "No disponible"
+    }
+  ]
+}

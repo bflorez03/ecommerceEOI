@@ -1,0 +1,23 @@
+<h1 (mouseover)="showName($event)">{{item.name}}</h1>
+<img id="photoItem" [src]="item.image" [alt]='item.definition'>
+<p *ngIf="!editable" (click)="changeState(item)">{{item.description}}</p>
+<input *ngIf="editable" type="text" (keydown.enter)="saveChangeDescription(item, $event)">
+<p>{{item.price | currency:'EUR'}}</p>
+<p *ngIf="item.stock > 0">{{item.stock}} in stock</p>
+<p *ngIf="item.stock === 0">Out of stock</p>
+<p class="quantity">
+  <button (click)="updateQuantity(item, 2)">-</button>
+  <input type="number" [(ngModel)]="tempQuantity" (change)="updateQuantity(item, 0)" width="4px">
+  <button (click)="updateQuantity(item, 1)">+</button>
+</p>
+<div class="tagBotton">
+  <button type="button" (click)="editItem()">
+    <img src="assets/editBoton.png">
+  </button>
+  <button type="button" (click)="addToCart()">
+    <img src="assets/addToCart.png">
+  </button>
+  <button type="button" (click)="deleteItem()">
+    <img src="assets/botonEliminar.png">
+  </button>
+</div>

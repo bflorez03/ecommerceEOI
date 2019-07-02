@@ -1,0 +1,18 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+  <p>
+    <label>Name: </label>
+    <input type="text" formControlName="name" [(ngModel)]="shippingInfo.name">
+  </p>
+  <p>
+    <label>Address: </label>
+    <input type="text" formControlName="address" [(ngModel)]="shippingInfo.address">
+  </p>
+  <p>
+    <label>Email: </label>
+    <input type="email" formControlName="email" [(ngModel)]="shippingInfo.email">
+  </p>
+  <p>
+    <button type="submit" [disabled]="!form.valid">Submit</button>
+  </p>
+
+</form>

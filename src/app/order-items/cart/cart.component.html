@@ -1,0 +1,7 @@
+<div *ngFor="let cartItem of cart">
+  <p>{{cartItem.item.name}}</p>
+  <p>{{cartItem.quantity}}</p>
+  <p>{{cartItem.item.price | currency:'EUR'}}</p>
+  <p>{{ totalCostItem(cartItem.item, cartItem.quantity) | currency:'EUR'}}</p>
+  <button type="button" (click)="remove(cartItem.item.id)">Remove</button>
+</div>
